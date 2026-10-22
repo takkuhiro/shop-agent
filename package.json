@@ -1,0 +1,20 @@
+{
+  "name": "shop-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chat shopping agent built on Shopify's Shop MCP and the Claude API",
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @shop-agent/server --filter @shop-agent/web dev",
+    "start": "pnpm --filter @shop-agent/web build && SERVE_WEB=1 pnpm --filter @shop-agent/server start",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "biome check .",
+    "format": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2"
+  },
+  "license": "MIT"
+}
