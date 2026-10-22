@@ -1,6 +1,6 @@
 # shop-agent
 
-ShopifyのShop MCP（https://mcp.shop.com）とClaude APIで作った、会話で買い物をするチャットエージェントです。ブラウザのGUIから、商品検索、カート追加、チェックアウトまで会話で進められます。
+Shopifyの[Shop MCP](https://mcp.shop.com)とClaude APIで作った、会話で買い物をするチャットエージェントです。ブラウザのGUIから、商品検索、カート追加、チェックアウトまで会話で進められます。
 
 作った経緯とつまずいた点は、[Zennの記事](https://zenn.dev/takkuhiro/articles/shop-pay-agent)にまとめています。
 

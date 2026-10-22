@@ -4,14 +4,14 @@ Shopify の Shop MCP と Claude API で買い物をするチャットエージ�
 
 ## コマンド
 
-- `pnpm start` ビルドして起動（http://localhost:8787）、`pnpm dev` 開発起動
+- `pnpm start` ビルドして起動（`http://localhost:8787`）、`pnpm dev` 開発起動
 - `pnpm test` / `pnpm typecheck` / `pnpm lint` / `pnpm format`（Biome）
 - 長い出力はログファイルへ送って `tail` で確認する
 
 ## 進め方
 
 - TDD。バグ修正には必ず再発防止のテストを足す
-- 公式ドキュメント（https://shop.dev/docs）に無い挙動は、実機で確かめてから実装する。ダミー入力への 200 は検証にならない
+- 公式ドキュメント（[shop.dev/docs](https://shop.dev/docs)）に無い挙動は、実機で確かめてから実装する。ダミー入力への 200 は検証にならない
 - 方針の承認を得る前に実装へ入らない。設計の確認や質問には、まず調べた事実で答える
 - 実購入（`complete_checkout`）は本人の同意なしに実行しない。Shop アカウントの設定（予算、接続の削除）は本人が行う
 - git: feature ブランチで作業し、`git add` と `git commit` は別コマンドで実行する。push と PR 作成はしない
